@@ -49,7 +49,7 @@ print("Welcome to the soap calculator. Please follow the instructions onscreen t
 
 olive_oil = input_measurements("Please enter the amount of olive oil you would like to use in grammes.\n")
 
-print("Okay, {O}g of Olive Oil\n".format(O = olive_oil))
+print("Okay, {O}g of Olive Oil.\n".format(O = olive_oil))
 
 # Get coconut oil measurements and store this as a variable
 
