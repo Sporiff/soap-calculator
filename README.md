@@ -1,2 +1,3 @@
-# soap-calculator
-A simple soap calculator
+# Soap Calculator
+
+A very simple soap calculator
