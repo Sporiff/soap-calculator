@@ -31,13 +31,13 @@ def yes_no(question):
         else:
             print("Please respond with 'yes' or 'no'\n")
 
-# Make a function to ensure we get a number between 1-10
+# Make a function to ensure we get a number between 0-10
 
 def percentage(question):
     while True:
         userInput = input_measurements(question)
-        if userInput < 1 or userInput > 10:
-            print("Please input a number between 1 and 10\n")
+        if userInput < 0 or userInput > 10:
+            print("Please input a number between 0 and 10\n")
             continue
         else:
             return userInput
@@ -61,10 +61,11 @@ print("Okay, {C}g of Coconut Oil.\n".format(C = coconut_oil))
 
 use_reduction = yes_no("Would you like to use lye reduction?\n")
 
-# If the user chooses to reduce their content, get a percentage between 1 - 10
+# If the user chooses to reduce their content, get a percentage between 0 - 10
 
 if use_reduction:
-    lye_reduction = percentage("Please enter the percentage of reduction you would like to use (between 1 and 10)\n")
+    lye_reduction = percentage("Please enter the percentage of reduction you would like to use (between 0 and 10)\n")
+    print("Using {P}% lye reduction.\n".format(P = lye_reduction))
 
 # Calculate the total values and return them to the user
     
